@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class square : Shape 
+    internal class Square : Shape 
     {
         public float length;
         public float breadth;
-        public square()
+        public Square()
         {
 
         }
-        public square(float length, float breadth)
+        public Square(float length, float breadth)
         {
             this.length = length;
             this.breadth = breadth;
         }
-        public override void getCorners()
+        public override void GetCorners()
         {
             Console.WriteLine("I have 4 sides.");
         }
-        public override void print()
+        public override void Print()
         {
             Console.WriteLine("I am a square, hehe!");
         }
-        public override float area()
+        public override float Area()
         {
             return (this.length * this.breadth);
         } 

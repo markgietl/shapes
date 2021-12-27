@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class circle : Shape
+    internal class Circle : Shape
     {
         public float radius;
-        public circle()
+        public Circle()
         {
 
         }
-        public circle(float rad)
+        public Circle(float rad)
         {
             this.radius = rad;
         }
-        public override void getCorners()
+        public override void GetCorners()
         {
             Console.WriteLine("I have no sides mate!");
         }
-        public override void print()
+        public override void Print()
         {
             Console.WriteLine("I'm a circle bro!");
         }
-        public override float area()
+        public override float Area()
         {
             return (float) Math.PI * this.radius * this.radius;
 

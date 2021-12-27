@@ -8,8 +8,8 @@ namespace Shapes
 {
     internal abstract class Shape 
     {
-        public abstract void getCorners();
-        public abstract void print();
-        public abstract float area();
+        public abstract void GetCorners();
+        public abstract void Print();
+        public abstract float Area();
     }
 }
