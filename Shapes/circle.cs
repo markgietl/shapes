@@ -8,21 +8,26 @@ namespace Shapes
 {
     internal class circle : Shape
     {
+        public float radius;
         public circle()
         {
 
+        }
+        public circle(float rad)
+        {
+            this.radius = rad;
         }
         public override void getCorners()
         {
             Console.WriteLine("I have no sides mate!");
         }
-        public void print()
+        public override void print()
         {
             Console.WriteLine("I'm a circle bro!");
         }
-        public float area(float rad)
+        public override float area()
         {
-            return (float)Math.PI * rad * rad;
+            return (float) Math.PI * this.radius * this.radius;
 
         }
     }

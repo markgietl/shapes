@@ -6,10 +6,10 @@ namespace Shapes
     {
         static void Main(string[] args)
         {
-            circle acirc = new circle();
-            square asquare = new square();
-            Console.WriteLine("The area of the circle is " + acirc.area(7));
-            Console.WriteLine("The area of the square is " + asquare.area(4, 5));
+            circle acirc = new circle(766);
+            square asquare = new square(5, 7);
+            Console.WriteLine("The area of the circle is " + acirc.area());
+            Console.WriteLine("The area of the square is " + asquare.area());
 
         }
 

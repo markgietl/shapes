@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal abstract class Shape : Log
+    internal abstract class Shape 
     {
-        public void print()
-        {
-            Console.WriteLine("I'm a shape!");
-        }
         public abstract void getCorners();
+        public abstract void print();
+        public abstract float area();
     }
 }
