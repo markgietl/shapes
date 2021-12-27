@@ -6,7 +6,12 @@ namespace Shapes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            circle acirc = new circle();
+            square asquare = new square();
+            Console.WriteLine("The area of the circle is " + acirc.area(7));
+            Console.WriteLine("The area of the square is " + asquare.area(4, 5));
+
         }
+
     }
 }
