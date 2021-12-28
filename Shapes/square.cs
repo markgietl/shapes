@@ -9,8 +9,8 @@ namespace Shapes
     internal class Square : Shape 
     {
         public static int number = 0;
-        private float length;
-        private float breadth;
+        private float Length { get; set;}
+        private float Breadth { get; set;} 
         public Square()
         {
 
@@ -18,8 +18,8 @@ namespace Shapes
         public Square(float length, float breadth)
         {
             number++;
-            this.length = length;
-            this.breadth = breadth;
+            this.Length = length;
+            this.Breadth = breadth;
             Console.WriteLine($"I am square number {number}");
         }
         public override void GetCorners()
@@ -32,7 +32,7 @@ namespace Shapes
         }
         public override float Area()
         {
-            return (this.length * this.breadth);
+            return (this.Length * this.Breadth);
         } 
     }
 }

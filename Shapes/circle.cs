@@ -9,6 +9,11 @@ namespace Shapes
     internal class Circle : Shape
     {
         private float radius;
+        private float Radius
+        {
+            get { return radius;} 
+            set { radius = value;} 
+        }
         public Circle()
         {
 
@@ -27,7 +32,7 @@ namespace Shapes
         }
         public override float Area()
         {
-            return (float) Math.PI * this.radius * this.radius;
+            return (float) Math.PI * this.Radius * this.Radius;
 
         }
     }
