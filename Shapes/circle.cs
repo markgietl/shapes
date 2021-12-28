@@ -8,7 +8,7 @@ namespace Shapes
 {
     internal class Circle : Shape
     {
-        public float radius;
+        private float radius;
         public Circle()
         {
 

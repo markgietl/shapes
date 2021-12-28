@@ -8,16 +8,19 @@ namespace Shapes
 {
     internal class Square : Shape 
     {
-        public float length;
-        public float breadth;
+        public static int number = 0;
+        private float length;
+        private float breadth;
         public Square()
         {
 
         }
         public Square(float length, float breadth)
         {
+            number++;
             this.length = length;
             this.breadth = breadth;
+            Console.WriteLine($"I am square number {number}");
         }
         public override void GetCorners()
         {
